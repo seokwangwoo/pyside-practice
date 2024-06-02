@@ -3,15 +3,20 @@
 import sys
 
 import click
-
+from PySide6.QtWidgets import QApplication
+from pyside_practice.main_window import MainWindow
 
 @click.command()
 def main():
-    """Console script for pyside_practice."""
-    click.echo("Replace this message by putting your code into "
-               "pyside_practice.cli.main")
-    click.echo("See click documentation at https://click.palletsprojects.com/")
-    return 0
+    # Step 1: Create the main application
+    app = QApplication(sys.argv)
+
+    # Step 2: Create and show the main window
+    main_window = MainWindow()
+    main_window.show()
+
+    # Step 3: Execute the application
+    sys.exit(app.exec())
 
 
 if __name__ == "__main__":
