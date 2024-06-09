@@ -26,8 +26,8 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
 click = "*"
-pyside6 = "^6.7.1"
 bokeh = "^3.4.1"
+pyside6 = "6.6.1"
 
 [tool.poetry.dev-dependencies]
 bumpversion = "*"
